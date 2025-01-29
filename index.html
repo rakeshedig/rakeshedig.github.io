@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-  <!-- Head content remains exactly the same -->
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title>Index - iPortfolio Bootstrap Template</title>
@@ -30,73 +29,217 @@
 </head>
 
 <body class="index-page">
-  <!-- Header remains exactly the same -->
+
   <header id="header" class="header dark-background d-flex flex-column">
-    <!-- ... keep all header content unchanged ... -->
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+
+    <div class="profile-img">
+      <img src="assets/img/my-profile-img.jpg" alt="" class="img-fluid rounded-circle">
+    </div>
+
+    <a href="index.html" class="logo d-flex align-items-center justify-content-center">
+      <h1 class="sitename">Rakesh Goud Edigi</h1>
+    </a>
+    
+    <div class="social-links text-center">
+      <a href="https://www.linkedin.com/in/rakeshgoud-edigi/" class="linkedin" target="_blank">
+          <i class="bi bi-linkedin"></i>
+      </a>
+    </div>
+
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
+        <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
+        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
+        <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
+        <li class="dropdown"><a href="#"><i class="bi bi-menu-button navicon"></i> <span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <ul>
+            <li><a href="#">Dropdown 1</a></li>
+            <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <ul>
+                <li><a href="#">Deep Dropdown 1</a></li>
+                <li><a href="#">Deep Dropdown 2</a></li>
+                <li><a href="#">Deep Dropdown 3</a></li>
+                <li><a href="#">Deep Dropdown 4</a></li>
+                <li><a href="#">Deep Dropdown 5</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Dropdown 2</a></li>
+            <li><a href="#">Dropdown 3</a></li>
+            <li><a href="#">Dropdown 4</a></li>
+          </ul>
+        </li>
+        <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+      </ul>
+    </nav>
+
   </header>
 
   <main class="main">
-    <!-- Hero, About, Skills sections remain unchanged -->
-    <!-- ... keep hero, about, skills sections as-is ... -->
 
-    <!-- Modified Resume Section -->
-    <section id="resume" class="resume section">
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+      <img src="assets/img/rakesh_bg.png" alt="" data-aos="fade-in" class="">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <h2>Rakesh Goud Edigi</h2>
+        <p>I'm <span class="typed" data-typed-items="Business Analyst, Financial Analyst, Product Analyst, Program Manager, Data Analyst">Designer</span></p>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section">
       <div class="container section-title" data-aos="fade-up">
-        <h2>Resume</h2>
+        <h2>About</h2>
+        <p>Results-driven IT professional with 4 years of experience in business analysis and data analytics, specializing in banking and healthcare domains. Delivered 15+ projects, optimized workflows saving 1,000+ hours annually, and deployed scalable solutions serving 10M+ users, boosting system performance by 40%.</p>
       </div>
 
-      <!-- Full-width container -->
-      <div class="container-fluid px-lg-5">
-        <div class="row gx-0"> <!-- Removed gutters -->
-
-          <!-- Left Column (Summary & Education) -->
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <h3 class="resume-title">Summary</h3>
-            <!-- Keep ALL your original summary content here -->
-            <p>Results-driven IT professional with 4 years...strategic thinking.</p>
-            <div class="resume-item pb-0">
-              <!-- Keep all your skills/lists content here -->
-            </div>
-
-            <h3 class="resume-title">Education</h3>
-            <!-- Keep ALL education content unchanged -->
-            <div class="resume-item">
-              <h4>Master's in information Technology...</h4>
-              <!-- ... -->
-            </div>
-            <div class="resume-item">
-              <h4>Bachelor of Technology...</h4>
-              <!-- ... -->
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-4 justify-content-center">
+          <div class="col-lg-4">
+            <img src="assets/img/my-profile-img.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-8 content">
+            <h2>Business Analyst | Data Analyst | Financial Analyst | Product Analyst | Project Manager| Program Manager</h2>
+            <div class="row">
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>https://rakeshedig.github.io/</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+774-243-4512</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Worcester,MA,USA</span></li>
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Master's</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>rakeshgoudedigi5@gmail.com</span></li>
+                </ul>
+              </div>
             </div>
           </div>
-
-          <!-- Right Column (Experience) -->
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <h3 class="resume-title">Professional Experience</h3>
-            <!-- Keep ALL experience content unchanged -->
-            <div class="resume-item">
-              <h4>Business Analyst</h4>
-              <!-- ... -->
-            </div>
-            <div class="resume-item">
-              <h4>Associate Business Analyst</h4>
-              <!-- ... -->
-            </div>
-            <div class="resume-item">
-              <h4>Programmer Analyst Trainee</h4>
-              <!-- ... -->
-            </div>
-          </div>
-
         </div>
       </div>
     </section>
 
-    <!-- Portfolio, Contact sections remain unchanged -->
-    <!-- ... keep portfolio, contact sections as-is ... -->
-  </main>
+    <!-- Skills Section -->
+    <section id="skills" class="skills section light-background">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Core Competencies</h2>
+      </div>
 
-  <!-- Footer scripts remain unchanged -->
-  <!-- ... keep all scripts at the bottom ... -->
-</body>
-</html>
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row skills-content skills-animation">
+          <div class="col-lg-6">
+            <div class="progress">
+              <span class="skill"><span>SQL</span> <i class="val">85%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill"><span>Excel</span> <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill"><span>Requirements Gathering</span> <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill"><span>Data Analysis</span> <i class="val">85%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="progress">
+              <span class="skill"><span>Business analysis</span> <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill"><span>Stakeholder Management</span> <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill"><span>Tableau</span> <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill"><span>Project Management</span> <i class="val">80%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Resume</h2>
+        <p></p>
+      </div>
+
+      <div class="container">
+        <div data-aos="fade-up" data-aos-delay="100">
+          <h3 class="resume-title">Summary</h3>
+          <p>Results-driven IT professional with 4 years of experience in business analysis and data analytics, specializing in banking and healthcare domains. Delivered 15+ projects, optimized workflows saving 1,000+ hours annually, and deployed scalable solutions serving 10M+ users, boosting system performance by 40%. Analytical and results-driven Analyst with 3 years of experience in the IT industry, specializing in optimizing processes and delivering data-driven solutions within the banking, financial services, and healthcare sectors. Experienced in core banking products and cross-functional project management. Proficient in data analysis, business analysis, and process improvement, with a strong focus on client-facing roles, stakeholder communication, and service delivery improvement. Certified Business Analysis Professional (CBAP) committed to innovation and strategic thinking.</p>
+          
+          <div class="resume-item pb-0">
+            <h4><strong></strong></h4>
+            <p><em></em></p>
+            <ul>
+              <p><strong>Location:</strong> Worcester, MA, USA</p>
+              <p><strong>Phone:</strong> 774-243-4512</p>
+              <p><strong>Email:</strong> rakeshgoudedigi5@gmail.com</p>
+              <p><strong>Languages & Tools:</strong> SQL, Tableau, Advanced Excel (Pivot Tables, VBA), JIRA, Confluence, Dynatrace, Postman (API Testing), Balsamiq, Google Analytics, Power BI, Lucidcharts, Draw.io, Microsoft Visio, A/B testing</p>
+              <p><strong>Skills:</strong> Business Analysis, Process Improvement, End User Research, Requirement Gathering, Product Management, Quality Improvement, Project Management, Wireframe Designing, Decision-Making Insights, Ad Hoc Analysis, Risk Management, Program Management, Process Optimization, Change Management, Product Marketing, Financial Modeling, GAP Analysis, Quality Management</p>
+              <p><strong>Databases:</strong> PostgreSQL, MySQL, SQL Server Management Studio, Oracle</p>
+              <p><strong>Methodologies & Frameworks:</strong> SDLC, Agile, Scrum, Lean Six Sigma, Requirements Traceability Matrix</p>
+              <p><strong>Knowledgeable:</strong> Machine Learning, Python, ETL, Azure, AWS, Salesforce, DevOps, Snowflake</p>
+              <p><strong>Domain Knowledge:</strong> Core Banking, Financial Services, Healthcare, e-commerce</p>
+            </ul>
+          </div>
+
+          <h3 class="resume-title">Education</h3>
+          <div class="resume-item">
+            <h4>Master's in information Technology &amp; Graphic Design</h4>
+            <h5>2024 - 2025</h5>
+            <p><em>Clark University, Worcester, MA, USA</em></p>
+            <p>Courses: Business Intelligence, IT Project Management, Gen AI, IT Strategy and leadership, Database Management System, Info System Analysis & Design</p>
+          </div>
+
+          <div class="resume-item">
+            <h4>Bachelor of Technology &amp; Graphic Design</h4>
+            <h5>2017 - 2021</h5>
+            <p><em>Mahatma Gandhi Institute of Technology, Hyderabad, Telangana, India</em></p>
+            <p>Systems Engineering, C, Python, DBMS, Computer Architecture, Deep Learning, Machine Learning</p>
+          </div>
+
+          <h3 class="resume-title">Professional Experience</h3>
+          <div class="resume-item">
+            <h4>Business Analyst</h4>
+            <h5>Feb 2023 - Dec 2023</h5>
+            <p><em>Temenos India Private Limited -- Bengaluru, India</em></p>
+            <ul>
+              <p>Led sessions for Temenos banking SaaS products, aligning objectives with EMEA, UK, and LATAM regions, improving stakeholder alignment by 20%.</p>
+              <p>
