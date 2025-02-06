@@ -1292,3 +1292,45 @@ section,
   line-height: 1.6;
 }
 
+/* Certifications Section */
+.certification-item {
+  background: #fff;
+  padding: 30px;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.certification-item:hover {
+  transform: translateY(-5px);
+}
+
+.certification-item h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.certification-item .organization {
+  color: #6c757d;
+  margin-bottom: 1rem;
+}
+
+.certificate-link {
+  display: inline-flex;
+  align-items: center;
+  color: #0563bb;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.certificate-link:hover {
+  color: #0678e3;
+  text-decoration: underline;
+}
+
+.certificate-link i {
+  margin-left: 8px;
+  font-size: 0.9rem;
+}
