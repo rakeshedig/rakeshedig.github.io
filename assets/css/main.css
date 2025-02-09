@@ -1334,3 +1334,58 @@ section,
   margin-left: 8px;
   font-size: 0.9rem;
 }
+
+/* Achievements Section */
+.achievement-card {
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.achievement-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.card-icon {
+  font-size: 2.5rem;
+  color: #0563bb;
+  margin-bottom: 1rem;
+}
+
+.achievement-card h3 {
+  color: #2d4059;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.achievement-card p {
+  color: #4a4a4a;
+  line-height: 1.6;
+}
+
+.achievement-link {
+  display: inline-flex;
+  align-items: center;
+  color: #0563bb;
+  text-decoration: none;
+  font-weight: 600;
+  margin-top: 1rem;
+  transition: color 0.3s ease;
+}
+
+.achievement-link:hover {
+  color: #0678e3;
+  text-decoration: underline;
+}
+
+.achievement-link i {
+  margin-left: 8px;
+  font-size: 0.9rem;
+}
+
